@@ -1,11 +1,13 @@
 import './App.css';
 import Addcar from './Addcar/Addcar';
+import Review from './Review/Review';
+import Order from './Order/Order';
 function App() {
 
   return (
     <div>
-      <h1>pobphon</h1>
-      <Addcar />
+      {/* <Review /> */}
+      <Order />
     </div>
   )
 }

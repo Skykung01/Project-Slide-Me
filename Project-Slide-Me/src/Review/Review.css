@@ -1,0 +1,17 @@
+.Review-container{
+    width: 100%;
+    height: 100%;
+    background-color: #08A54C;
+    border: #000000 solid 1px;
+}
+.Review-header{
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem; 
+    flex-wrap: nowrap;
+    margin: auto 10%;
+}
+.Review-Blackground{
+    background-color: #ffffff;
+    height: 800px;
+}
