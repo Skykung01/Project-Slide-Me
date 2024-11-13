@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { fetchorders } from '../data/Data-orders';
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Order.css';
 
@@ -36,7 +37,7 @@ function Order() {
                                 <td>{order['Service code']}</td>
                                 <td>{order.name}</td>
                                 <td>{order.money}</td>
-                                <td>{order.Status}</td>
+                                <td><button className=' btn btn-danger'><span className='bi bi-trash'></span></button></td>
                             </tr>
                         ))}
                     </tbody>
