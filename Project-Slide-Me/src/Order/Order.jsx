@@ -17,6 +17,24 @@ function Order() {
         console.log(OrderRaw);
     }, [OrderRaw]);
 
+
+
+    //// Delete order
+    function DeleteOrder(id) {
+        const orderRemain = OrderRaw.filter((order) => {
+            return order.id !== id
+        })
+
+        setOrderRaw(orderRemain)
+
+    }
+
+
+
+
+
+
+
     return (
         <div>
             <div className='Order-table'>
@@ -37,7 +55,11 @@ function Order() {
                                 <td>{order['Service code']}</td>
                                 <td>{order.name}</td>
                                 <td>{order.money}</td>
-                                <td><button className=' btn btn-danger'><span className='bi bi-trash'></span></button></td>
+                                <td>
+                                    <button className='btn btn-success'>
+                                        <span className='bi bi-pencil-square'></span></button>&nbsp;
+                                    <button className=' btn btn-danger' onClick={() => DeleteOrder(order.id)}><span class="bi bi-trash"></span></button>
+                                </td>
                             </tr>
                         ))}
                     </tbody>
