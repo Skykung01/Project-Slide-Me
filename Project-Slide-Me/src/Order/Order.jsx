@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { fetchorders } from '../data/Data-orders';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import './Order.css';
 
 function Order() {
