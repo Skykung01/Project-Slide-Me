@@ -1,17 +1,37 @@
-.Review-container{
+.Review-container {
     width: 100%;
     height: 100%;
-    background-color: #08A54C;
+    /* background-color: #08A54C; */
     border: #000000 solid 1px;
 }
-.Review-header{
+
+.Review-header {
     display: flex;
-    justify-content: space-between; 
-    gap: 1rem; 
+    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: nowrap;
     margin: auto 10%;
 }
-.Review-Blackground{
-    background-color: #ffffff;
-    height: 800px;
+
+.Review-Blackground {
+    display: flex;
+    justify-content: flex-start
 }
+
+.Review-Graph {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 500px; 
+}
+.Review-Box{
+    margin: 125px 100px;
+    width: 2000px;
+    height: 800px;
+ 
+    border: #000000 solid 1px;
+}
+.table-body{
+    width: 50;
+}
+
