@@ -19,6 +19,7 @@
 }
 
 .Review-Graph {
+    background-color: #81C784; /* สีพื้นหลังครึ่งบน */
     display: flex;
     justify-content: left;
     align-items: left;
@@ -26,36 +27,107 @@
 }
 
 .Review-Box {
-    margin: 50px auto; /* จัดให้อยู่ตรงกลางและปรับระยะห่าง */
-    width: 80%; /* กำหนดความกว้างให้เป็นเปอร์เซ็นต์ */
-    max-width: 1200px; /* ความกว้างสูงสุด */
-    height: 700px; /* ปรับความสูงตามเนื้อหา */
-    padding: 20px; /* เพิ่มระยะห่างภายใน */
-    
-    border: 1px solid #000000; /* ขอบสีดำ */
-    border-radius: 8px; /* มุมโค้ง */
-    background-color: #f9f9f9; /* พื้นหลังสีเทาอ่อน */
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงากล่อง */
-    
-    display: flex; /* ใช้สำหรับจัดวางเนื้อหาภายใน */
-    flex-direction: column; /* เรียงเนื้อหาในแนวตั้ง */
-    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
-    overflow-y: auto; /* เปิด Scroll bar หากเนื้อหาสูงเกิน */
-}
-
-.table-body {
-    width: 50;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+    height: 700px;
+    padding: 20px;
+    border: 1px solid #042c07;
+    border-radius: 8px;
+    background-color: #A5D6A7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
 }
 
 .Review-Average {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: #333333;
+    color: #042c07;
     margin-bottom: 20px;
     padding: 10px;
     max-width: 150px;
     max-height: 150px;
     margin: 50px 100px 0px 150px;
+}
+
+.select-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 80%;
+    /* เพิ่มระยะห่าง */
+    width: 80%;
+}
+
+
+.star-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-left:  60px;
+    margin-top: -10px;
+    width: 80%;
+}
+.position-graph {
+    display: flex; /* แสดงเนื้อหาในรูปแบบ Flexbox */
+    justify-content: flex-end; /* จัดตำแหน่งไปทางขวา */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    margin-left: 100px;
+    gap:5px; /* เว้นระยะห่างระหว่างลูกภายใน Flexbox */
+    border-radius: 8px; /* ทำมุมโค้ง */
+    max-width: 90%; /* กำหนดความกว้างสูงสุด */
+    
+}
+
+.box1 {
+    display: flex;
+    width: 25px; 
+    height: 25px; 
+    background-color: #1B5E20; 
+    padding: 10px; 
+    margin: 10px 50px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.box2 {
+    display: flex;
+    width: 25px; 
+    height: 25px; 
+    background-color: #388E3C; 
+    padding: 10px; 
+    margin: 10px 50px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.box3 {
+    display: flex;
+    width: 25px; 
+    height: 25px; 
+    background-color: #66BB6A; 
+    padding: 10px; 
+    margin: 10px 50px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.box4 {
+    display: flex;
+    width: 25px; 
+    height: 25px; 
+    background-color: #81C784; 
+    padding: 10px; 
+    margin: 10px 50px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.box5 {
+    display: flex;
+    width: 25px; 
+    height: 25px; 
+    background-color: #A5D6A7; 
+    padding: 10px; 
+    margin: 10px 50px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }

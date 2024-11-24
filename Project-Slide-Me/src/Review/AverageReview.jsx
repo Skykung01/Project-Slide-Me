@@ -5,8 +5,9 @@ const ReviewAverage = () => {
     const [reviews, setReviews] = useState([]);
     const [average, setAverage] = useState(0);
 
+    // ดึงข้อมูลรีวิว
     useEffect(() => {
-        const fetchedReviews = fetchreviews(); // ดึงข้อมูลรีวิว
+        const fetchedReviews = fetchreviews();
         setReviews(fetchedReviews);
 
         // คำนวณค่าเฉลี่ย
