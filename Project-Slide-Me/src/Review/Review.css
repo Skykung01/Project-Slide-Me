@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     /* background-color: #08A54C; */
-    border: #000000 solid 1px;
+    /* border: #000000 solid 1px; */
 }
 
 .Review-header {
@@ -22,16 +22,40 @@
     display: flex;
     justify-content: left;
     align-items: left;
-    height: 500px; 
+    height: 500px;
 }
-.Review-Box{
-    margin: 125px 100px;
-    width: 2000px;
-    height: 800px;
- 
-    border: #000000 solid 1px;
+
+.Review-Box {
+    margin: 50px auto; /* จัดให้อยู่ตรงกลางและปรับระยะห่าง */
+    width: 80%; /* กำหนดความกว้างให้เป็นเปอร์เซ็นต์ */
+    max-width: 1200px; /* ความกว้างสูงสุด */
+    height: 700px; /* ปรับความสูงตามเนื้อหา */
+    padding: 20px; /* เพิ่มระยะห่างภายใน */
+    
+    border: 1px solid #000000; /* ขอบสีดำ */
+    border-radius: 8px; /* มุมโค้ง */
+    background-color: #f9f9f9; /* พื้นหลังสีเทาอ่อน */
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงากล่อง */
+    
+    display: flex; /* ใช้สำหรับจัดวางเนื้อหาภายใน */
+    flex-direction: column; /* เรียงเนื้อหาในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    overflow-y: auto; /* เปิด Scroll bar หากเนื้อหาสูงเกิน */
 }
-.table-body{
+
+.table-body {
     width: 50;
 }
 
+.Review-Average {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 50px 100px 0px 150px;
+}

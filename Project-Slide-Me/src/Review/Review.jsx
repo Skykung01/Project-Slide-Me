@@ -5,21 +5,27 @@ import GraphReview from './GraphReview';
 
 function Review() {
     const [reviewRaw, setReviewRaw] = useState([]);
+    const [averageStar, setAverageStar] = useState(0); // สร้าง state สำหรับค่าเฉลี่ย
 
     useEffect(() => {
-        setReviewRaw(fetchreviews()); // ดึงข้อมูลจากฟังก์ชัน fetchreviews
-    }, []); // จะทำงานแค่ครั้งเดียวเมื่อ component ถูก render ครั้งแรก
+        const reviews = fetchreviews(); // ดึงข้อมูลจากฟังก์ชัน fetchreviews
+        setReviewRaw(reviews);
 
-    useEffect(() => {
-        console.log(reviewRaw); // ตรวจสอบข้อมูลที่ได้
-    }, [reviewRaw]); // ทำงานทุกครั้งที่ reviewRaw เปลี่ยนแปลง
+        // คำนวณค่าเฉลี่ย
+        const totalStars = reviews.reduce((sum, review) => sum + parseInt(review.Star), 0);
+        const average = (totalStars / reviews.length).toFixed(2); // หาค่าเฉลี่ย (ทศนิยม 2 ตำแหน่ง)
+        setAverageStar(average);
+    }, []); // ทำงานแค่ครั้งเดียวเมื่อ component ถูก render ครั้งแรก
 
     return (
         <div className="Review-container">
-            <div className='Review-Graph'>
-                <GraphReview />
-                <div className='Review-Box'>
-                    <table className='table'>
+            <div className="Review-Graph">
+                <div>
+                    <h3 className='Review-Average'>ค่าเฉลี่ย: {averageStar}</h3>
+                    <GraphReview />
+                </div>
+                <div className="Review-Box">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th>คะแนน</th>
